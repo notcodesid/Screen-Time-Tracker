@@ -3,7 +3,12 @@
   "name": "Screen Time Tracker",
   "version": "1.0",
   "description": "Tracks screen time for each tab.",
-  "permissions": ["storage", "tabs", "activeTab"],
+"permissions": [
+    "storage",
+    "tabs",
+    "activeTab",
+    "windows"
+  ],
   "background": {
     "service_worker": "background.js"
   },
