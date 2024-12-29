@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Screen Time Tracker",
+  "version": "1.0",
+  "description": "Tracks screen time for each tab.",
+  "permissions": ["storage", "tabs", "activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html"
+  }
+}
