@@ -39,35 +39,47 @@ export default function App() {
   }
 
   return (
-    <div className="w-[400px] h-[600px] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex flex-col">
-      <div className="p-6 space-y-1 border-b border-gray-200 dark:border-gray-700">
-        <h2 className="text-2xl font-bold">Screen Time</h2>
-        <p className="text-sm text-gray-500 dark:text-gray-400">
-          Total time: {formatTime(getTotalTime())}
-        </p>
+<>
+<p> Screen Time </p>
+<h3 className="text-sm text-gray-500 dark:text-gray-400"> Total time: {formatTime(getTotalTime())}</h3>
+
+
+
+    <div className="w-[400px] h-[600px] bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 flex flex-col items-center justify-center">
+      <div className="p-6 space-y-1 border-b border-gray-200 dark:border-gray-700 w-full text-center">
+        <h1 className="text-2xl font-bold"></h1>
+       
       </div>
-      <div className="flex-1 overflow-y-auto px-6">
-        {tabData.map((tab) => (
-          <div
-            key={tab.domain}
-            className="flex items-center py-4 group hover:bg-gray-100 dark:hover:bg-gray-700 rounded-lg transition-colors"
-          >
-            <div className="flex-shrink-0 mr-4">
-              <div className="w-10 h-10 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center">
-                <Globe className="w-5 h-5 text-blue-500 dark:text-blue-300" />
+      <div className="flex-1 overflow-y-auto px-6 w-full">
+        <div className="flex flex-wrap justify-center">
+          {tabData.map((tab) => (
+            <div
+              key={tab.domain}
+              className="flex items-center py-4 mr-4 mb-4"
+            >
+              <div>
+              <div className="flex-shrink-0 mr-4">
+                <div className="w-10 h-10 rounded-full flex items-center justify-center">
+                  <Globe className="w-3 h-3" />
+                </div>
+              </div>
+              <div className="flex-grow min-w-0 text-center">
+                <p className="font-medium text-sm truncate">{tab.domain}</p>
+              </div>
+              </div>
+              <div>
+                <p className="text-sm flex items-center justify-center">
+                  <Clock className="w-2 h-2 mr-1" />
+                  {formatTime(tab.timeSpent)}
+                </p>
               </div>
             </div>
-            <div className="flex-grow min-w-0">
-              <p className="font-medium text-sm truncate">{tab.domain}</p>
-              <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center">
-                <Clock className="w-4 h-4 mr-1" />
-                {formatTime(tab.timeSpent)}
-              </p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
+
+    </>
   )
 }
 
