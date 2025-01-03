@@ -1,0 +1,83 @@
+Screen Time Tracker Extension 📊
+🚀 Tracks screen time for each tab.
+
+📋 Table of Contents
+Introduction
+Features
+Installation
+Usage
+Contributing
+License
+🌟 Introduction
+The Screen Time Tracker Extension helps you monitor and track the amount of time you spend on each tab in your browser. This can help you manage your time better and increase productivity.
+
+✨ Features
+Tracks screen time for each tab
+User-friendly interface
+Detailed reports of screen time
+Lightweight and efficient
+🛠️ Installation
+Clone the repository:
+```
+git clone https://github.com/notcodesid/Screen-Time-Tracker-Extension.git
+```
+Navigate to the project directory:
+```
+cd Screen-Time-Tracker-Extension
+```
+Install dependencies:
+```
+npm install
+```
+Build the extension:
+```
+npm run build
+```
+Load the extension in your browser:
+
+Open your browser's extensions page (usually chrome://extensions/ for Chrome).
+
+
+Enable "Developer mode".
+
+Click on "Load unpacked" and select the dist directory.
+
+
+📖 Usage
+
+Open your browser and click on the Screen Time Tracker Extension icon.
+
+The extension will start tracking the time you spend on each tab.
+
+You can view detailed reports and insights by clicking on the extension icon.
+
+🚀 Future Enhancements
+
+Add support for multiple browsers
+
+Include more detailed analytics and graphs
+
+Enable syncing data across devices
+
+Add notifications and reminders for time management
+
+🤝 Contributing
+We welcome contributions to make the Screen Time Tracker Extension even better! Here’s how you can help:
+
+Fork the repository.
+Create a new branch for your feature or bug fix:
+```
+git checkout -b feature-branch
+```
+Make your changes and commit them:
+```
+git commit -m "Add new feature"
+```
+Push your changes to your forked repository:
+```
+git push origin feature-branch
+```
+Open a pull request with a detailed description of your changes.
+
+📜 License
+This project is licensed under the MIT License.
